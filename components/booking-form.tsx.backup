@@ -1,0 +1,176 @@
+"use client"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Calendar, User, Phone, Mail, MessageSquare } from "lucide-react"
+
+export function BookingForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    roomType: "",
+    message: "",
+    startDate: ""
+  })
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    // Create WhatsApp message
+    const message = `Merhaba! Yurt rezervasyonu hakkında bilgi almak istiyorum.
+
+📝 İletişim Bilgileri:
+• İsim: ${formData.name}
+• Telefon: ${formData.phone}
+• E-posta: ${formData.email}
+• Tercih edilen oda tipi: ${formData.roomType}
+• Başlangıç tarihi: ${formData.startDate}
+
+💬 Mesaj:
+${formData.message}
+
+Benimle iletişime geçerseniz sevinirim. Teşekkürler!`
+
+    const whatsappUrl = `https://wa.me/905423145219?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
+  }
+
+  const handleChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }))
+  }
+
+  return (
+    <section className="py-20 bg-muted/30">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            Rezervasyon Talebi
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Aşağıdaki formu doldurarak WhatsApp üzerinden bize ulaşabilirsiniz
+          </p>
+        </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Calendar className="w-5 h-5" />
+              Bilgilerinizi Doldurun
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="flex items-center gap-2">
+                    <User className="w-4 h-4" />
+                    Ad Soyad *
+                  </Label>
+                  <Input
+                    id="name"
+                    value={formData.name}
+                    onChange={(e) => handleChange("name", e.target.value)}
+                    placeholder="Adınız ve soyadınız"
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    Telefon *
+                  </Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => handleChange("phone", e.target.value)}
+                    placeholder="05xx xxx xx xx"
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="flex items-center gap-2">
+                    <Mail className="w-4 h-4" />
+                    E-posta
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    placeholder="ornek@email.com"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="startDate">
+                    Başlangıç Tarihi
+                  </Label>
+                  <Input
+                    id="startDate"
+                    type="date"
+                    value={formData.startDate}
+                    onChange={(e) => handleChange("startDate", e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="roomType">Oda Tercihi</Label>
+                <Select onValueChange={(value) => handleChange("roomType", value)}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Oda tipini seçin" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1-kisilik-wcli">1 Kişilik WC'li</SelectItem>
+                    <SelectItem value="1-kisilik-ortak">1 Kişilik Ortak Lavabo</SelectItem>
+                    <SelectItem value="2-kisilik-wcli">2 Kişilik WC'li</SelectItem>
+                    <SelectItem value="2-kisilik-ortak">2 Kişilik Ortak Lavabo</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message" className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4" />
+                  Mesajınız
+                </Label>
+                <Textarea
+                  id="message"
+                  value={formData.message}
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  placeholder="Sorularınız veya özel isteklerinizi yazabilirsiniz..."
+                  rows={4}
+                />
+              </div>
+
+              <Button 
+                type="submit" 
+                className="w-full" 
+                size="lg"
+                disabled={!formData.name || !formData.phone}
+              >
+                WhatsApp ile Gönder
+              </Button>
+
+              <p className="text-sm text-muted-foreground text-center">
+                * Bu form bilgilerinizi WhatsApp'a yönlendirecek ve otomatik mesaj oluşturacaktır
+              </p>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  )
+}
