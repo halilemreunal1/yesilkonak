@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Home, Info, Users, Phone, Instagram, Shield } from "lucide-react"
+import { Menu, X, Home, Info, Users, Phone, Instagram, Shield, HelpCircle, MapPin, MessageCircle } from "lucide-react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,7 +10,9 @@ export function Header() {
   const navigation = [
     { name: "Ana Sayfa", href: "#home", icon: Home },
     { name: "Hakkımızda", href: "#about", icon: Info },
-    { name: "Hizmetlerimiz", href: "#services", icon: Users },
+    { name: "Odalar", href: "#services", icon: Users },
+    { name: "SSS", href: "#faq", icon: HelpCircle },
+    { name: "Konum", href: "#konum", icon: MapPin },
     { name: "İletişim", href: "#contact", icon: Phone },
   ]
 
@@ -69,12 +71,22 @@ export function Header() {
               </a>
               
               <a 
-                href="tel:05423145219" 
+                href="https://wa.me/905423145219?text=Merhaba, yurt hakkında bilgi almak istiyorum"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-1 hover:text-secondary transition-colors duration-200"
+                title="WhatsApp ile yaz"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span className="hidden lg:inline text-sm">WhatsApp</span>
+              </a>
+              <a 
+                href="tel:02462241650" 
+                className="flex items-center space-x-1 bg-secondary/20 hover:bg-secondary/40 px-3 py-1.5 rounded-lg transition-colors duration-200 font-bold"
                 title="Bizi arayın"
               >
                 <Phone className="w-4 h-4" />
-                <span className="hidden lg:inline text-sm">0542 314 52 19</span>
+                <span className="hidden lg:inline text-sm">0246 224 16 50</span>
               </a>
             </div>
           </div>

@@ -21,27 +21,30 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4 max-w-md">
-              Yılların deneyimi ile Isparta'da öğrenci konaklama hizmetinde öncü konumdayız. Yeşilkonak Erkek Öğrenci
-              Yurdu olarak güvenli, temiz ve konforlu ortamımızda öğrencilerimizin eğitim hayatlarını destekliyoruz.
+              2006'dan bu yana Isparta'da Süleyman Demirel Üniversitesi öğrencilerine güvenli, temiz ve kaliteli konaklama hizmeti sunuyoruz. GSB onaylı yurdumuzda kahvaltı, WiFi, 7/24 güvenlik ve temizlik hizmetleri mevcuttur.
             </p>
-            <div className="flex space-x-4">
+            {/* SEO keyword paragraph — helps indexing */}
+            <p className="text-xs opacity-40 max-w-md leading-relaxed">
+              Isparta erkek öğrenci yurdu · SDÜ yurdu · Süleyman Demirel Üniversitesi öğrenci yurdu · Isparta özel yurt · GSB onaylı yurt Isparta
+            </p>
+            <div className="flex space-x-4 mt-4">
               <a
-                href="#"
+                href="https://facebook.com/ispartayurt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
                 className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/ispartayurt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Twitter className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -63,6 +66,16 @@ export function Footer() {
               <li>
                 <a href="#services" className="hover:text-primary transition-colors">
                   Hizmetlerimiz
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-primary transition-colors">
+                  SSS
+                </a>
+              </li>
+              <li>
+                <a href="#konum" className="hover:text-primary transition-colors">
+                  Konum
                 </a>
               </li>
               <li>
@@ -98,25 +111,15 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@yesilkonakerkekogreniyurdu.org</span>
+                <a href="mailto:info@ispartayurt.org" className="hover:text-primary transition-colors">info@ispartayurt.org</a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60">
-          <p>&copy; 2024 Yeşilkonak Erkek Öğrenci Yurdu. Tüm hakları saklıdır.</p>
-          <p className="mt-2">
-            Web tasarım:{" "}
-            <a
-              href="https://www.marchdijital.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              March Dijital
-            </a>
-          </p>
+          <p className="text-xs opacity-60 mb-2">Özel Yeşilkonak Yükseköğretim Erkek Öğrenci Yurdu</p>
+          <p>&copy; 2026 Yeşilkonak Erkek Öğrenci Yurdu. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>
