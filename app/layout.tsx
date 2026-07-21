@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import Script from "next/script"
 import "./globals.css"
 
+
 export const metadata: Metadata = {
   title: "Isparta Erkek Öğrenci Yurdu | Yeşilkonak — SDÜ Yakını, GSB Onaylı",
   description:
@@ -178,15 +179,19 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* LocalBusiness Schema */}
-        <Script id="local-business-schema" type="application/ld+json" strategy="beforeInteractive">
-          {JSON.stringify(localBusinessSchema)}
-        </Script>
+        {/* LocalBusiness Schema — inline for static export compatibility */}
+        <script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
 
-        {/* FAQPage Schema */}
-        <Script id="faq-schema" type="application/ld+json" strategy="beforeInteractive">
-          {JSON.stringify(faqSchema)}
-        </Script>
+        {/* FAQPage Schema — inline for static export compatibility */}
+        <script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
