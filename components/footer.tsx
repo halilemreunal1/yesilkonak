@@ -54,32 +54,32 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Hızlı Linkler</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="#home" className="hover:text-primary transition-colors">
+                <a href="#home" className="hover:text-secondary transition-colors">
                   Ana Sayfa
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-primary transition-colors">
+                <a href="#about" className="hover:text-secondary transition-colors">
                   Hakkımızda
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-primary transition-colors">
+                <a href="#services" className="hover:text-secondary transition-colors">
                   Hizmetlerimiz
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-primary transition-colors">
+                <a href="#faq" className="hover:text-secondary transition-colors">
                   SSS
                 </a>
               </li>
               <li>
-                <a href="#konum" className="hover:text-primary transition-colors">
+                <a href="#konum" className="hover:text-secondary transition-colors">
                   Konum
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-primary transition-colors">
+                <a href="#contact" className="hover:text-secondary transition-colors">
                   İletişim
                 </a>
               </li>
@@ -88,7 +88,7 @@ export function Footer() {
                   href="https://ozelbarinmahizmetleri.gsb.gov.tr/ozelyurtlar" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors flex items-center space-x-1"
+                  className="hover:text-secondary transition-colors flex items-center space-x-1"
                 >
                   <Shield className="w-3 h-3" />
                   <span>Resmi Onaylı Yurt</span>
@@ -111,7 +111,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:info@ispartayurt.org" className="hover:text-primary transition-colors">info@ispartayurt.org</a>
+                <a href="mailto:info@ispartayurt.org" className="hover:text-secondary transition-colors">info@ispartayurt.org</a>
               </div>
             </div>
           </div>

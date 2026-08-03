@@ -32,17 +32,13 @@ const faqs = [
     q: "Rezervasyon ve kayıt nasıl yapılır?",
     a: "Rezervasyon için 0246 224 16 50 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00–19:00 saatleri arasında bizzat ziyaret edebilirsiniz. Odaları yerinde görmeden karar vermenizi öneririz — sizi bekliyoruz!",
   },
-  {
-    q: "2025–2026 dönemi kontenjan durumu nedir?",
-    a: "Kontenjanımız sınırlıdır ve her yıl kayıt sezonu başlamadan hızla dolmaktadır. Yer garantisi için erken kayıt yaptırmanızı şiddetle tavsiye ederiz. Güncel bilgi için hemen arayın: 0246 224 16 50.",
-  },
 ]
 
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="py-20 bg-muted/30">
+    <section id="faq" className="py-14 bg-muted/30">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-4">
@@ -113,7 +109,7 @@ export function FaqSection() {
               href="https://wa.me/905423145219?text=Merhaba, yurt hakkında bilgi almak istiyorum"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
             >
               💬 WhatsApp
             </a>

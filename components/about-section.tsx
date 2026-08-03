@@ -27,9 +27,9 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-14 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Hakkımızda</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Yılların deneyimi ile Isparta'da öğrenci konaklama hizmetinde öncü konumdayız. Yeşilkonak Erkek Öğrenci
@@ -37,7 +37,7 @@ export function AboutSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {values.map((value, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">

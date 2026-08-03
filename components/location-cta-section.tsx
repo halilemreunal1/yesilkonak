@@ -2,7 +2,7 @@ import { MapPin, Phone, Clock, Navigation, MessageCircle, Mail } from "lucide-re
 
 export function LocationCtaSection() {
   return (
-    <section id="konum" className="py-20 bg-background">
+    <section id="konum" className="py-14 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -130,7 +130,7 @@ export function LocationCtaSection() {
                 href="https://wa.me/905423145219?text=Merhaba, yurt hakkında bilgi almak ve oda görmek istiyorum"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-4 rounded-xl font-bold text-base hover:bg-green-600 transition-colors shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-6 py-4 rounded-xl font-bold text-base hover:bg-secondary/90 transition-colors shadow-md"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp ile Yaz

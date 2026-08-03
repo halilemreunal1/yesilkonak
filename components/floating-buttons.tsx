@@ -12,34 +12,34 @@ export function FloatingButtons() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp ile yaz"
-        className="hidden md:flex fixed bottom-6 right-6 z-50 items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 font-semibold text-sm"
+        className="hidden md:flex fixed bottom-6 right-6 z-50 items-center gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground px-5 py-3.5 rounded-full shadow-2xl shadow-secondary/30 transition-all duration-300 hover:scale-105 font-semibold text-sm"
       >
         <MessageCircle className="w-5 h-5" />
         WhatsApp ile Yaz
       </a>
 
       {/* ── Mobile: sticky bottom action bar ── */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.12)] safe-bottom">
-        <div className="grid grid-cols-3 divide-x divide-gray-200">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary border-t border-primary-foreground/10 shadow-[0_-4px_24px_rgba(0,0,0,0.25)]">
+        <div className="grid grid-cols-3 divide-x divide-primary-foreground/10">
           {/* Call */}
           <a
             id="mobile-float-call"
             href="tel:02462241650"
             aria-label="Ara"
-            className="flex flex-col items-center justify-center py-3 gap-1 text-primary hover:bg-primary/5 transition-colors active:bg-primary/10"
+            className="flex flex-col items-center justify-center py-3 gap-1 text-primary-foreground hover:bg-white/10 transition-colors active:bg-white/20"
           >
             <Phone className="w-5 h-5" />
             <span className="text-xs font-semibold">Ara</span>
           </a>
 
-          {/* WhatsApp */}
+          {/* WhatsApp — accent highlight in the center */}
           <a
             id="mobile-float-whatsapp"
             href="https://wa.me/905423145219?text=Merhaba, yurt hakkında bilgi almak istiyorum"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
-            className="flex flex-col items-center justify-center py-3 gap-1 bg-green-500 text-white hover:bg-green-600 transition-colors active:bg-green-700"
+            className="flex flex-col items-center justify-center py-3 gap-1 bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors active:bg-secondary/80"
           >
             <MessageCircle className="w-5 h-5" />
             <span className="text-xs font-semibold">WhatsApp</span>
@@ -52,7 +52,7 @@ export function FloatingButtons() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Yol Tarifi"
-            className="flex flex-col items-center justify-center py-3 gap-1 text-primary hover:bg-primary/5 transition-colors active:bg-primary/10"
+            className="flex flex-col items-center justify-center py-3 gap-1 text-primary-foreground hover:bg-white/10 transition-colors active:bg-white/20"
           >
             <MapPin className="w-5 h-5" />
             <span className="text-xs font-semibold">Yol Tarifi</span>
