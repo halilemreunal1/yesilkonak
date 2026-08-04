@@ -30,7 +30,7 @@ const testimonials = [
 const stats = [
   { num: "2006", label: "Kuruluş" },
   { num: "20+", label: "Yıllık Deneyim" },
-  { num: "2.000+", label: "Mezun Öğrenci" },
+  { num: "1.000+", label: "Mezun Öğrenci" },
   { num: "4", label: "Oda Tipi" },
 ]
 
@@ -43,27 +43,26 @@ export function TestimonialsSection() {
   const t = testimonials[current]
 
   return (
-    <section id="testimonials" className="py-14 bg-foreground text-background">
+    <section id="testimonials" className="py-14 bg-indigo-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-2">Öğrencilerimiz Ne Diyor?</h2>
-          <p className="text-sm opacity-70">2006'dan bu yana 2.000'den fazla öğrenciye ev sahipliği yaptık.</p>
+          <h2 className="text-2xl lg:text-3xl font-bold mb-2 text-foreground">Öğrencilerimiz Ne Diyor?</h2>
+          <p className="text-sm text-muted-foreground">2006'dan bu yana 1.000'den fazla öğrenciye ev sahipliği yaptık.</p>
         </div>
 
         {/* Single testimonial card */}
-        <div className="relative bg-background/10 rounded-2xl p-7 border border-background/20">
+        <div className="relative bg-white rounded-2xl p-7 border border-border shadow-sm">
           {/* Nav arrows */}
           <button
             onClick={prev}
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-muted hover:bg-muted/80 text-foreground transition-colors"
             aria-label="Önceki yorum"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
             onClick={next}
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-muted hover:bg-muted/80 text-foreground transition-colors"
             aria-label="Sonraki yorum"
           >
             <ChevronRight className="w-4 h-4" />
@@ -81,7 +80,7 @@ export function TestimonialsSection() {
             </div>
 
             {/* Quote text */}
-            <p className="text-background/85 leading-relaxed italic mb-5">"{t.text}"</p>
+            <p className="text-muted-foreground leading-relaxed italic mb-5">"{t.text}"</p>
 
             {/* Author */}
             <div className="flex items-center gap-3">
@@ -89,8 +88,8 @@ export function TestimonialsSection() {
                 {t.initial}
               </div>
               <div>
-                <p className="font-semibold text-background text-sm">{t.name}</p>
-                <p className="text-xs text-background/60">{t.detail}</p>
+                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                  <p className="text-xs text-muted-foreground">{t.detail}</p>
               </div>
             </div>
           </div>
@@ -104,8 +103,8 @@ export function TestimonialsSection() {
               onClick={() => setCurrent(i)}
               className={`transition-all duration-200 rounded-full ${
                 i === current
-                  ? "w-6 h-2.5 bg-secondary"
-                  : "w-2.5 h-2.5 bg-background/30 hover:bg-background/50"
+                  ? "w-6 h-2.5 bg-primary"
+                  : "w-2.5 h-2.5 bg-primary/20 hover:bg-primary/40"
               }`}
               aria-label={`${i + 1}. yoruma git`}
             />
@@ -113,11 +112,11 @@ export function TestimonialsSection() {
         </div>
 
         {/* Compact stats row */}
-        <div className="mt-8 pt-6 border-t border-background/20 flex justify-center gap-8 flex-wrap">
+        <div className="mt-8 pt-6 border-t border-border flex justify-center gap-8 flex-wrap">
           {stats.map((stat, i) => (
             <div key={i} className="text-center">
-              <p className="text-2xl font-bold text-secondary">{stat.num}</p>
-              <p className="text-xs text-background/60 mt-0.5">{stat.label}</p>
+              <p className="text-2xl font-bold text-primary">{stat.num}</p>
+              <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
             </div>
           ))}
         </div>

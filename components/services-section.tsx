@@ -49,7 +49,7 @@ export function ServicesSection() {
     <section id="services" className="py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Hizmetlerimiz</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Oda Tipleri ve Hizmetlerimiz</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Öğrencilerimizin konforlu ve verimli bir eğitim hayatı geçirmeleri için sunduğumuz kapsamlı hizmetler.
           </p>
@@ -80,7 +80,7 @@ export function ServicesSection() {
                 <img src="/single-person-room.webp" alt="Tek Kişilik Oda" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
-                <h4 className="text-xl font-semibold mb-2">1 Kişilik Odalar</h4>
+                <p className="text-xl font-semibold mb-2">1 Kişilik Odalar</p>
                 <p className="text-muted-foreground mb-4">
                   Kişisel çalışma alanı, dolap, yatak ve mini buzdolabı bulunan özel odalar.
                 </p>
@@ -112,7 +112,7 @@ export function ServicesSection() {
                 <img src="/two-person-room.webp" alt="İki Kişilik Oda" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
-                <h4 className="text-xl font-semibold mb-2">2 Kişilik Odalar</h4>
+                <p className="text-xl font-semibold mb-2">2 Kişilik Odalar</p>
                 <p className="text-muted-foreground mb-4">
                   İki öğrenci için tasarlanmış, sosyal ve ekonomik konaklama seçeneği.
                 </p>

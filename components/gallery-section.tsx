@@ -115,7 +115,7 @@ export function GallerySection() {
     <section id="gallery" className="py-14 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">Galeri</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">Yurt Fotoğrafları</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Yurdumuzdaki yaşam alanları, odalar ve sosyal tesisleri keşfedin.
           </p>

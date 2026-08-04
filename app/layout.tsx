@@ -7,11 +7,11 @@ import "./globals.css"
 
 
 export const metadata: Metadata = {
-  title: "Isparta Erkek Öğrenci Yurdu | Yeşilkonak — SDÜ Yakını, GSB Onaylı",
+  title: "Isparta Erkek Öğrenci Yurdu | Yeşilkonak — GSB Onaylı",
   description:
-    "Isparta'da GSB onaylı, 2006'dan beri hizmet veren Yeşilkonak Erkek Öğrenci Yurdu. Kahvaltı dahil, 7/24 güvenlik, temizlik, WiFi. SDÜ'ye ulaşım kolaylığı. Hemen arayın: 0246 224 16 50",
+    "Isparta'da GSB onaylı Yeşilkonak Erkek Öğrenci Yurdu. Kahvaltı dahil, 7/24 güvenlik, WiFi, SDÜ'ye kolay ulaşım. 0246 224 16 50",
   keywords:
-    "Isparta erkek öğrenci yurdu, Süleyman Demirel Üniversitesi yurdu, SDU erkek yurdu, SDÜ yurdu, Isparta özel öğrenci yurdu, Isparta yurt, Isparta erkek yurdu, GSB onaylı yurt Isparta, Isparta yurt kahvaltı dahil, Modern Evler öğrenci yurdu, Yeşilkonak yurt",
+    "Isparta erkek öğrenci yurdu, Süleyman Demirel Üniversitesi yurdu, SDÜ yurdu, Isparta özel yurt, GSB onaylı yurt Isparta, Yeşilkonak yurt",
   authors: [{ name: "Yeşilkonak Erkek Öğrenci Yurdu" }],
   icons: {
     icon: "/logo.png",
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Yeşilkonak Erkek Öğrenci Yurdu — Isparta'nın En Köklü Yurdu",
+    title: "Yeşilkonak Erkek Öğrenci Yurdu — Isparta",
     description:
-      "20 yıldır 2.000+ öğrenciye ev sahipliği yaptık. Kahvaltı dahil, GSB onaylı, SDÜ yakını. Hemen ara veya ziyaret et.",
-    url: "https://ispartayurt.org",
+      "20 yıldır 1.000+ öğrenciye ev sahipliği yaptık. Kahvaltı dahil, GSB onaylı, SDÜ yakını. Hemen ara veya ziyaret et.",
+    url: "https://www.ispartayurt.org",
     siteName: "Yeşilkonak Erkek Öğrenci Yurdu",
     type: "website",
     locale: "tr_TR",
     images: [
       {
-        url: "https://ispartayurt.org/yesilkonak-building.jpeg",
+        url: "https://www.ispartayurt.org/yesilkonak-building.jpeg",
         width: 1200,
         height: 630,
         alt: "Yeşilkonak Erkek Öğrenci Yurdu — Isparta",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://ispartayurt.org",
+    canonical: "https://www.ispartayurt.org",
   },
 }
 
@@ -51,7 +51,7 @@ const localBusinessSchema = {
   "@type": "LodgingBusiness",
   name: "Özel Yeşilkonak Yükseköğretim Erkek Öğrenci Yurdu",
   alternateName: "Yeşilkonak Erkek Öğrenci Yurdu",
-  url: "https://ispartayurt.org",
+  url: "https://www.ispartayurt.org",
   telephone: ["+902462241650", "+905423145219"],
   email: "info@ispartayurt.org",
   address: {
@@ -86,7 +86,7 @@ const localBusinessSchema = {
   foundingDate: "2006",
   slogan: "Isparta'nın En Köklü Erkek Öğrenci Yurdu",
   sameAs: ["https://www.instagram.com/ispartayurt", "https://www.facebook.com/ispartayurt"],
-  image: "https://ispartayurt.org/yesilkonak-building.jpeg",
+  image: "https://www.ispartayurt.org/yesilkonak-building.jpeg",
 }
 
 const faqSchema = {
@@ -147,14 +147,6 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Rezervasyon için 0246 224 16 50 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00-19:00 saatleri arasında ziyaret edebilirsiniz. Oda görmeden karar vermenizi önermiyoruz — sizi bekliyoruz!",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "2025-2026 dönemi kontenjan durumu nedir?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Kontenjanımız sınırlıdır ve her yıl hızla dolmaktadır. Erken kayıt yaptırmanızı tavsiye ederiz. Güncel kontenjan bilgisi için 0246 224 16 50 numaralı hattı arayabilirsiniz.",
       },
     },
   ],

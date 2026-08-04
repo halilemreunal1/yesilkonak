@@ -5,7 +5,7 @@ export function ContactSection() {
     <section id="contact" className="py-14 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">İletişim</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Bize Ulaşın</h2>
         </div>
 
         <div className="max-w-2xl mx-auto">
@@ -15,7 +15,7 @@ export function ContactSection() {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold mb-1">Adres</h4>
+                <p className="font-semibold mb-1">Adres</p>
                 <p className="text-muted-foreground">
                   Modern Evler, 3104. Sk. No: 29
                   <br />
@@ -29,7 +29,7 @@ export function ContactSection() {
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold mb-1">Telefon</h4>
+                <p className="font-semibold mb-1">Telefon</p>
                 <p className="text-muted-foreground">02462241650</p>
                 <p className="text-muted-foreground">GSM: 05423145219</p>
                 <a
@@ -49,8 +49,8 @@ export function ContactSection() {
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold mb-1">E-posta</h4>
-                <p className="text-muted-foreground">achilles2005@hotmail.com</p>
+                <p className="font-semibold mb-1">E-posta</p>
+                <p className="text-muted-foreground">achiles2005@hotmail.com</p>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export function ContactSection() {
                 <Clock className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold mb-1">Çalışma Saatleri</h4>
+                <p className="font-semibold mb-1">Çalışma Saatleri</p>
                 <p className="text-muted-foreground">
                   Haftanın her günü gelmeden önce arayıp 08:00 - 19:00 arasında bizi ziyaret edebilirsiniz.
                 </p>
@@ -72,7 +72,7 @@ export function ContactSection() {
                 <Users className="w-6 h-6 text-primary" />
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold mb-3">Bizi Takip Edin</h4>
+                <p className="font-semibold mb-3">Bizi Takip Edin</p>
                 <div className="space-y-3">
                   <a
                     href="https://facebook.com/ispartayurt"

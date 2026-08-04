@@ -13,8 +13,8 @@ export function HeroSection() {
         style={{ backgroundImage: "url('/yesilkonak-building.jpeg')" }}
         aria-hidden="true"
       />
-      {/* Dark forest overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-950/90 via-green-950/80 to-green-950/55" aria-hidden="true" />
+      {/* Deep indigo overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/90 via-indigo-950/80 to-indigo-950/50" aria-hidden="true" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
         <div className="max-w-2xl">
@@ -28,7 +28,7 @@ export function HeroSection() {
           <p className="text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
             SDÜ öğrencileri için 2006'dan beri güvenli, temiz ve{" "}
             <span className="font-semibold text-secondary/90">kahvaltı dahil</span>{" "}
-            konaklama. GSB onaylı yurdumuzda 2.000'den fazla öğrenciye ev sahipliği yaptık.
+            konaklama. GSB onaylı yurdumuzda 1.000'den fazla öğrenciye ev sahipliği yaptık.
           </p>
 
           {/* CTA Buttons */}
@@ -58,7 +58,7 @@ export function HeroSection() {
             {[
               { icon: Shield, label: "GSB Onaylı" },
               { icon: Clock, label: "2006'dan Beri" },
-              { icon: Users, label: "2.000+ Öğrenci" },
+              { icon: Users, label: "1.000+ Öğrenci" },
               { icon: Shield, label: "7/24 Güvenlik" },
             ].map((item, i) => (
               <div

@@ -26,7 +26,7 @@ export function Header() {
               <img src="/logo.png" alt="Yeşilkonak Erkek Öğrenci Yurdu Logo" className="w-full h-full object-contain" />
             </div>
             <div>
-              <h1 className="text-xl font-bold">Yeşilkonak Erkek Öğrenci Yurdu</h1>
+              <span className="text-xl font-bold">Yeşilkonak Erkek Öğrenci Yurdu</span>
               <p className="text-sm opacity-90">Güvenli Konaklama</p>
             </div>
           </div>

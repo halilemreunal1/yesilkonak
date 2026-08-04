@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Shield } from "lucid
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-indigo-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
@@ -51,7 +51,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Hızlı Linkler</h4>
+            <p className="font-semibold mb-4">Hızlı Linkler</p>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
                 <a href="#home" className="hover:text-secondary transition-colors">
@@ -60,27 +60,27 @@ export function Footer() {
               </li>
               <li>
                 <a href="#about" className="hover:text-secondary transition-colors">
-                  Hakkımızda
+                  Yeşilkonak Hakkında
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-secondary transition-colors">
-                  Hizmetlerimiz
+                  Oda Tipleri
                 </a>
               </li>
               <li>
                 <a href="#faq" className="hover:text-secondary transition-colors">
-                  SSS
+                  Sık Sorulan Sorular
                 </a>
               </li>
               <li>
                 <a href="#konum" className="hover:text-secondary transition-colors">
-                  Konum
+                  Konumumuz
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-secondary transition-colors">
-                  İletişim
+                  Bize Ulaşın
                 </a>
               </li>
               <li>
@@ -91,7 +91,7 @@ export function Footer() {
                   className="hover:text-secondary transition-colors flex items-center space-x-1"
                 >
                   <Shield className="w-3 h-3" />
-                  <span>Resmi Onaylı Yurt</span>
+                  <span>GSB Resmi Onay Belgesi</span>
                 </a>
               </li>
             </ul>
@@ -99,7 +99,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">İletişim</h4>
+            <p className="font-semibold mb-4">İletişim</p>
             <div className="space-y-3 text-sm opacity-80">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
