@@ -43,7 +43,7 @@ export function TestimonialsSection() {
   const t = testimonials[current]
 
   return (
-    <section id="testimonials" className="py-14 bg-indigo-50">
+    <section id="testimonials" className="py-14 bg-muted/40">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl lg:text-3xl font-bold mb-2 text-foreground">Öğrencilerimiz Ne Diyor?</h2>
@@ -51,7 +51,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Single testimonial card */}
-        <div className="relative bg-white rounded-2xl p-7 border border-border shadow-sm">
+        <div className="relative bg-card rounded-2xl p-7 border border-border shadow-sm">
           {/* Nav arrows */}
           <button
             onClick={prev}

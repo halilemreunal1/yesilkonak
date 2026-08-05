@@ -6,7 +6,7 @@ export function ServicesSection() {
     {
       icon: Wifi,
       title: "Ücretsiz WiFi",
-      description: "Tüm odalarda ve ortak alanlarda hızlı internet erişimi",
+      description: "1 Gbps fiber altyapı — tüm odalarda ve ortak alanlarda hızlı internet erişimi.",
     },
     {
       icon: Utensils,
@@ -55,17 +55,17 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
             <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="w-8 h-8 text-primary" />
+              <CardHeader className="text-center pb-3 px-3 pt-5 sm:px-6 sm:pt-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">{service.title}</CardTitle>
+                <CardTitle className="text-sm sm:text-lg leading-tight">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-center pt-0">
-                <p className="text-muted-foreground text-sm">{service.description}</p>
+              <CardContent className="text-center pt-0 px-3 pb-5 sm:px-6">
+                <p className="text-muted-foreground text-xs sm:text-sm">{service.description}</p>
               </CardContent>
             </Card>
           ))}

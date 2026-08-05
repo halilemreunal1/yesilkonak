@@ -9,6 +9,7 @@ import { LocationCtaSection } from "@/components/location-cta-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
+import { MobileBottomNav } from "@/components/mobile-bottom-nav"
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
       </main>
       <Footer />
       <FloatingButtons />
+      <MobileBottomNav />
     </div>
   )
 }

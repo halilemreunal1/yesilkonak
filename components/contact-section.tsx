@@ -80,8 +80,8 @@ export function ContactSection() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group"
                   >
-                    <div className="w-8 h-8 bg-blue-100 group-hover:bg-blue-200 rounded-lg flex items-center justify-center transition-colors">
-                      <Facebook className="w-4 h-4 text-blue-600" />
+                    <div className="w-8 h-8 bg-blue-500/15 group-hover:bg-blue-500/25 rounded-lg flex items-center justify-center transition-colors">
+                      <Facebook className="w-4 h-4 text-blue-400" />
                     </div>
                     <div>
                       <p className="font-medium">Facebook</p>
@@ -95,8 +95,8 @@ export function ContactSection() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group"
                   >
-                    <div className="w-8 h-8 bg-pink-100 group-hover:bg-pink-200 rounded-lg flex items-center justify-center transition-colors">
-                      <Instagram className="w-4 h-4 text-pink-600" />
+                    <div className="w-8 h-8 bg-pink-500/15 group-hover:bg-pink-500/25 rounded-lg flex items-center justify-center transition-colors">
+                      <Instagram className="w-4 h-4 text-pink-400" />
                     </div>
                     <div>
                       <p className="font-medium">Instagram</p>
