@@ -53,8 +53,8 @@ export function Header() {
           </nav>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-2">
-            {/* Social + Theme toggle */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* Desktop social links */}
             <div className="hidden lg:flex items-center gap-1 border-r border-border pr-3 mr-1">
               <a
                 href="https://ozelbarinmahizmetleri.gsb.gov.tr/ozelyurtlar"
@@ -80,8 +80,10 @@ export function Header() {
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
-              <ThemeToggle />
             </div>
+
+            {/* Theme toggle - directly in the header for both mobile & desktop */}
+            <ThemeToggle />
 
             {/* Call CTA pill */}
             <a
@@ -141,8 +143,6 @@ export function Header() {
               <MessageCircle className="w-4 h-4" />
               WhatsApp ile Yaz
             </a>
-            {/* Theme toggle row */}
-            <ThemeToggle className="w-full flex items-center justify-center gap-2 text-sm font-medium border border-border rounded-lg py-2" />
           </div>
         </div>
       )}
