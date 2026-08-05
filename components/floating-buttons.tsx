@@ -24,7 +24,7 @@ export function FloatingButtons() {
           {/* Call */}
           <a
             id="mobile-float-call"
-            href="tel:02462241650"
+            href="tel:05423145219"
             aria-label="Ara"
             className="flex flex-col items-center justify-center py-3 gap-1 text-primary-foreground hover:bg-white/10 transition-colors active:bg-white/20"
           >

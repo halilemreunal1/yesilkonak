@@ -86,11 +86,11 @@ export function Header() {
             {/* Call CTA pill */}
             <a
               id="header-call-cta"
-              href="tel:02462241650"
+              href="tel:05423145219"
               className="hidden sm:flex items-center gap-1.5 bg-cyan-400 hover:bg-cyan-300 text-gray-900 font-bold text-base px-5 py-2 rounded-lg transition-all duration-150 whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span className="hidden md:inline">0246 224 16 50</span>
+              <span className="hidden md:inline">0542 314 52 19</span>
               <span className="md:hidden">Ara</span>
             </a>
 
@@ -125,12 +125,12 @@ export function Header() {
           </nav>
           <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
             <a
-              href="tel:02462241650"
+              href="tel:05423145219"
               className="flex items-center justify-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-gray-900 font-bold text-sm px-4 py-2.5 rounded-lg transition-all"
               onClick={() => setIsMenuOpen(false)}
             >
               <Phone className="w-4 h-4" />
-              0246 224 16 50
+              0542 314 52 19
             </a>
             <a
               href="https://wa.me/905423145219"

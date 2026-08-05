@@ -9,7 +9,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Isparta Erkek Öğrenci Yurdu | Yeşilkonak — GSB Onaylı",
   description:
-    "Isparta'da GSB onaylı Yeşilkonak Erkek Öğrenci Yurdu. Kahvaltı dahil, 7/24 güvenlik, WiFi, SDÜ'ye kolay ulaşım. 0246 224 16 50",
+    "Isparta'da GSB onaylı Yeşilkonak Erkek Öğrenci Yurdu. Kahvaltı dahil, 7/24 güvenlik, WiFi, SDÜ'ye kolay ulaşım. 0542 314 52 19",
   keywords:
     "Isparta erkek öğrenci yurdu, Süleyman Demirel Üniversitesi yurdu, SDÜ yurdu, Isparta özel yurt, GSB onaylı yurt Isparta, Yeşilkonak yurt",
   authors: [{ name: "Yeşilkonak Erkek Öğrenci Yurdu" }],
@@ -52,7 +52,7 @@ const localBusinessSchema = {
   name: "Özel Yeşilkonak Yükseköğretim Erkek Öğrenci Yurdu",
   alternateName: "Yeşilkonak Erkek Öğrenci Yurdu",
   url: "https://www.ispartayurt.org",
-  telephone: ["+902462241650", "+905423145219"],
+  telephone: ["+905423145219"],
   email: "info@ispartayurt.org",
   address: {
     "@type": "PostalAddress",
@@ -146,7 +146,7 @@ const faqSchema = {
       name: "Rezervasyon ve kayıt nasıl yapılır?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Rezervasyon için 0246 224 16 50 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00-19:00 saatleri arasında ziyaret edebilirsiniz. Oda görmeden karar vermenizi önermiyoruz — sizi bekliyoruz!",
+        text: "Rezervasyon için 0542 314 52 19 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00-19:00 saatleri arasında ziyaret edebilirsiniz. Oda görmeden karar vermenizi önermiyoruz — sizi bekliyoruz!",
       },
     },
   ],

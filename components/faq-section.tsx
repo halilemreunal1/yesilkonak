@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Rezervasyon ve kayıt nasıl yapılır?",
-    a: "Rezervasyon için 0246 224 16 50 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00–19:00 saatleri arasında bizzat ziyaret edebilirsiniz. Odaları yerinde görmeden karar vermenizi öneririz — sizi bekliyoruz!",
+    a: "Rezervasyon için 0542 314 52 19 numaralı telefonu arayabilir, WhatsApp üzerinden iletişime geçebilir veya yurdumuzu haftanın her günü 08:00–19:00 saatleri arasında bizzat ziyaret edebilirsiniz. Odaları yerinde görmeden karar vermenizi öneririz — sizi bekliyoruz!",
   },
 ]
 
@@ -49,8 +49,8 @@ export function FaqSection() {
           </h2>
           <p className="text-lg text-muted-foreground">
             Aklınızdaki soruların cevabını bulamıyorsanız bizi arayın:{" "}
-            <a href="tel:02462241650" className="font-semibold text-primary hover:underline">
-              0246 224 16 50
+            <a href="tel:05423145219" className="font-semibold text-primary hover:underline">
+              0542 314 52 19
             </a>
           </p>
         </div>
@@ -99,10 +99,10 @@ export function FaqSection() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               id="faq-phone-cta"
-              href="tel:02462241650"
+              href="tel:05423145219"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
             >
-              📞 0246 224 16 50
+              📞 0542 314 52 19
             </a>
             <a
               id="faq-whatsapp-cta"

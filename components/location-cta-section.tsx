@@ -65,18 +65,11 @@ export function LocationCtaSection() {
                 <h3 className="font-semibold text-foreground mb-2">Telefon</h3>
                 <div className="space-y-1">
                   <a
-                    id="contact-landline"
-                    href="tel:02462241650"
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
-                  >
-                    📞 0246 224 16 50 <span className="text-xs opacity-60">(Sabit)</span>
-                  </a>
-                  <a
                     id="contact-gsm"
                     href="tel:05423145219"
                     className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
                   >
-                    📱 0542 314 52 19 <span className="text-xs opacity-60">(GSM)</span>
+                    📱 0542 314 52 19
                   </a>
                 </div>
               </div>
@@ -119,7 +112,7 @@ export function LocationCtaSection() {
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a
                 id="location-call-cta"
-                href="tel:02462241650"
+                href="tel:05423145219"
                 className="flex-1 flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-4 rounded-xl font-bold text-base hover:bg-primary/90 transition-colors shadow-md"
               >
                 <Phone className="w-5 h-5" />

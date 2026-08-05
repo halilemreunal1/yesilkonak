@@ -76,14 +76,14 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-3 mb-8">
             <a
               id="hero-call-cta"
-              href="tel:02462241650"
+              href="tel:05423145219"
               className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300
                          text-gray-900 font-bold text-sm sm:text-base
                          px-6 py-3 rounded-xl
                          transition-all duration-200 hover:scale-105 shadow-lg shadow-cyan-400/20"
             >
               <Phone className="w-4 h-4" />
-              0246 224 16 50
+              0542 314 52 19
             </a>
             <a
               id="hero-whatsapp-cta"
