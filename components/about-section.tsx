@@ -8,21 +8,29 @@ export function AboutSection() {
       icon: Heart,
       title: "Aile Ortamı",
       description: "Öğrencilerimizi ailemizin bir parçası olarak görüyor, sıcak bir ortam sunuyoruz.",
+      iconColor: "text-rose-500 dark:text-rose-400",
+      bgColor: "bg-rose-500/10 dark:bg-rose-500/20",
     },
     {
       icon: Award,
       title: "Kaliteli Hizmet",
       description: "Yılların deneyimi ile en kaliteli konaklama hizmetini sağlıyoruz.",
+      iconColor: "text-amber-500 dark:text-amber-400",
+      bgColor: "bg-amber-500/10 dark:bg-amber-500/20",
     },
     {
       icon: Star,
       title: "Güvenilir",
       description: "Aileler bize güveniyor, öğrenciler kendilerini güvende hissediyor.",
+      iconColor: "text-yellow-500 dark:text-yellow-400",
+      bgColor: "bg-yellow-500/10 dark:bg-yellow-500/20",
     },
     {
       icon: Target,
       title: "Hedef Odaklı",
       description: "Öğrencilerin eğitim hayatlarında başarılı olmalarını destekliyoruz.",
+      iconColor: "text-blue-500 dark:text-blue-400",
+      bgColor: "bg-blue-500/10 dark:bg-blue-500/20",
     },
   ]
 
@@ -39,10 +47,10 @@ export function AboutSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {values.map((value, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="group text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-primary" />
+                <div className={`w-16 h-16 ${value.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110`}>
+                  <value.icon className={`w-8 h-8 ${value.iconColor}`} />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
                 <p className="text-muted-foreground text-sm">{value.description}</p>
@@ -101,8 +109,8 @@ export function AboutSection() {
             <CardContent className="p-8">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Shield className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-emerald-500/10 dark:bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <div className="text-center lg:text-left">
                     <h3 className="text-xl font-bold text-foreground mb-2">Resmi Onaylı Yurt</h3>

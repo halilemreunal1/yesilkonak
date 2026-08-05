@@ -7,41 +7,57 @@ export function ServicesSection() {
       icon: Wifi,
       title: "Ücretsiz WiFi",
       description: "1 Gbps fiber altyapı — tüm odalarda ve ortak alanlarda hızlı internet erişimi.",
+      iconColor: "text-sky-500 dark:text-sky-400",
+      bgColor: "bg-sky-500/10 dark:bg-sky-500/20",
     },
     {
       icon: Utensils,
       title: "Kahvaltı Hizmeti",
       description: "Her sabah sıcak ve besleyici kahvaltı servisi",
+      iconColor: "text-amber-500 dark:text-amber-400",
+      bgColor: "bg-amber-500/10 dark:bg-amber-500/20",
     },
     {
       icon: Tv,
       title: "Ortak Alanlar",
       description: "TV salonu, dinlenme ve sosyalleşme alanları",
+      iconColor: "text-purple-500 dark:text-purple-400",
+      bgColor: "bg-purple-500/10 dark:bg-purple-500/20",
     },
     {
       icon: CookingPot,
       title: "Öğrenci Mutfağı",
       description: "Öğrencilerin güvenle yemek yapabileceği mutfak",
+      iconColor: "text-emerald-500 dark:text-emerald-400",
+      bgColor: "bg-emerald-500/10 dark:bg-emerald-500/20",
     },
     {
       icon: Shield,
       title: "7/24 Güvenlik",
       description: "Güvenlik kameraları ve nöbetçi personel",
+      iconColor: "text-rose-500 dark:text-rose-400",
+      bgColor: "bg-rose-500/10 dark:bg-rose-500/20",
     },
     {
       icon: Clock,
       title: "Esnek Saatler",
       description: "Öğrenci programlarına uygun esnek giriş-çıkış",
+      iconColor: "text-indigo-500 dark:text-indigo-400",
+      bgColor: "bg-indigo-500/10 dark:bg-indigo-500/20",
     },
     {
       icon: Refrigerator,
       title: "Mini Buzdolabı",
       description: "Tüm odalarda kişisel mini buzdolabı bulunmaktadır",
+      iconColor: "text-cyan-500 dark:text-cyan-400",
+      bgColor: "bg-cyan-500/10 dark:bg-cyan-500/20",
     },
     {
       icon: Shield,
       title: "Yönetmelik Uyumu",
       description: "Yangın ve deprem yönetmeliklerine tam uygunluk",
+      iconColor: "text-teal-500 dark:text-teal-400",
+      bgColor: "bg-teal-500/10 dark:bg-teal-500/20",
     },
   ]
 
@@ -57,10 +73,10 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center pb-3 px-3 pt-5 sm:px-6 sm:pt-6">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 ${service.bgColor} rounded-full flex items-center justify-center mx-auto mb-3 transition-transform duration-300 group-hover:scale-110`}>
+                  <service.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${service.iconColor}`} />
                 </div>
                 <CardTitle className="text-sm sm:text-lg leading-tight">{service.title}</CardTitle>
               </CardHeader>

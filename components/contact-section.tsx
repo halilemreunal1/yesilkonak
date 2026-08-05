@@ -30,8 +30,11 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Telefon</p>
-                <a href="tel:05423145219" className="text-muted-foreground hover:underline block">
-                  0542 314 52 19
+                <a href="tel:02462241650" className="text-muted-foreground hover:underline block">
+                  0246 224 16 50 <span className="text-xs opacity-60">(Sabit)</span>
+                </a>
+                <a href="tel:05423145219" className="text-muted-foreground hover:underline block mt-0.5">
+                  0542 314 52 19 <span className="text-xs opacity-60">(GSM)</span>
                 </a>
                 <a
                   href="https://wa.me/905423145219?text=Merhaba, yurt hakkında bilgi almak istiyorum"

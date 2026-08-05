@@ -25,7 +25,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: "/photos/rooms/tip-2_oda.jpg",
-    alt: "İki kişilik. Banyo tuvaleti 3 oda, 5 kişiyle sınırlı ortak kullanımdır. Kendi balkonu vardır.",
+    alt: "İki kişilik. Banyo tuvaleti 3 oda, 4 kişiyle sınırlı ortak kullanımdır. Kendi balkonu vardır.",
     title: "Tip-2 İki Kişilik Öğrenci Odası",
     category: "rooms"
   },
@@ -37,13 +37,13 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: "/photos/rooms/tip-4_oda.jpg",
-    alt: "Tek kişilik. Banyo tuvaleti 3 oda, 5 kişiyle sınırlı ortak kullanımdır. Ortak balkona tabidir.",
+    alt: "Tek kişilik. Banyo tuvaleti 3 oda, 4 kişiyle sınırlı ortak kullanımdır. Ortak balkona tabidir.",
     title: "Tip-4 Tek Kişilik Öğrenci Odası",
     category: "rooms"
   },
   {
     src: "/photos/rooms/tip-5_oda.jpg",
-    alt: "Tek kişilik. Banyo tuvaleti 3 oda, 5 kişiyle sınırlı ortak kullanımdır. Ortak balkona tabidir.",
+    alt: "Tek kişilik. Banyo tuvaleti 3 oda, 4 kişiyle sınırlı ortak kullanımdır. Ortak balkona tabidir.",
     title: "Tip-5 Tek Kişilik Öğrenci Odası",
     category: "rooms"
   },
@@ -216,14 +216,15 @@ export function GallerySection() {
             </div>
 
             {/* Caption — desktop */}
-            <div className="absolute bottom-4 left-16 right-16 bg-black/55 rounded-lg p-4 text-white hidden md:block">
+            <div className="absolute bottom-4 left-16 right-16 bg-black/55 rounded-lg p-4 text-white hidden md:block text-center">
               <h3 className="text-base font-semibold">{galleryImages[selectedImage].title}</h3>
-              <p className="text-sm text-gray-300 mt-0.5">{galleryImages[selectedImage].alt}</p>
+              <p className="text-sm text-gray-300 mt-1">{galleryImages[selectedImage].alt}</p>
             </div>
 
             {/* Caption — mobile */}
-            <div className="md:hidden mt-4 bg-black/55 rounded-lg p-3 text-white mx-4">
-              <h3 className="text-sm font-semibold text-center">{galleryImages[selectedImage].title}</h3>
+            <div className="md:hidden mt-3 bg-black/60 rounded-lg p-3 text-white mx-4 text-center">
+              <h3 className="text-sm font-semibold">{galleryImages[selectedImage].title}</h3>
+              <p className="text-xs text-gray-300 mt-1">{galleryImages[selectedImage].alt}</p>
             </div>
           </div>
         </div>
