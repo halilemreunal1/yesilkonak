@@ -67,7 +67,7 @@ export function HeroSection() {
 
           {/* Sub-headline */}
           <p className="text-base sm:text-lg text-white/70 leading-relaxed mb-8 max-w-md">
-            SDÜ öğrencileri için güvenli, temiz ve{" "}
+            SDÜ ve ISUBÜ öğrencileri için güvenli, temiz ve{" "}
             <span className="text-white font-medium">kahvaltı dahil</span>{" "}
             konaklama. 1.000&apos;den fazla öğrenciye ev sahipliği yaptık.
           </p>
